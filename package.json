@@ -2,7 +2,6 @@
   "name": "gcp-ts-pubsub",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/main.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "start": "ts-node src/main",
