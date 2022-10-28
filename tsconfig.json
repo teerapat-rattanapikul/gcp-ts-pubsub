@@ -15,7 +15,8 @@
       "target": "es2017",
       "outDir": ".build",
       "rootDir": "./",
-      "baseUrl": "./"
+      "baseUrl": "./",
+      "esModuleInterop":true
     },
     "exclude": [
       "node_modules"
