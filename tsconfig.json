@@ -18,6 +18,9 @@
       "baseUrl": "./",
       "esModuleInterop":true
     },
+    "ts-node": {
+      "esm": true
+    },
     "exclude": [
       "node_modules"
     ]
