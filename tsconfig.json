@@ -11,7 +11,7 @@
       "preserveConstEnums": true,
       "strictNullChecks": true,
       "sourceMap": true,
-      "moduleResolution": "node",
+      "moduleResolution": "Node",
       "target": "es2017",
       "outDir": ".build",
       "rootDir": "./",
@@ -21,6 +21,10 @@
     "ts-node": {
       "esm": true
     },
+    "compileOnSave": true,
+    "include": [
+      "src"
+    ],
     "exclude": [
       "node_modules"
     ]
