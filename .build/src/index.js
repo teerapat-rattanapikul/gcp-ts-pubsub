@@ -8,4 +8,4 @@ const helloPubSub = (event, context) => {
     console.log('...running');
 };
 exports.helloPubSub = helloPubSub;
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=index.js.map
