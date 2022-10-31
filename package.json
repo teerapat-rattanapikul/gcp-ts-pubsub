@@ -2,19 +2,7 @@
   "name": "gcp-ts-pubsub",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.ts",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "ts-node src/main.ts",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "prestart:prod": "npm run build",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "start:prod": "node dist/main.js"
-  },
+  "main": ".build/src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teerapat-rattanapikul/gcp-ts-pubsub.git"
