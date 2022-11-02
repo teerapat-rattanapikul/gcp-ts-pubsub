@@ -1,1 +1,1 @@
-export declare const helloPubSub: (event: any, context: any) => void;
+export declare const helloWorld: (event: any, context: any) => void;
