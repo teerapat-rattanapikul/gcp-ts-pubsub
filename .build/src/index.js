@@ -3,11 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.helloWorld = void 0;
+exports.helloPubSub = void 0;
 const core_1 = require("@nestjs/core");
 const platform_express_1 = require("@nestjs/platform-express");
 const express_1 = __importDefault(require("express"));
-const helloWorld = (event, context) => {
+const helloPubSub = (event, context) => {
     const message = event.data || null;
     const server = (0, express_1.default)();
     class AppModule {
@@ -23,5 +23,5 @@ const helloWorld = (event, context) => {
         console.log('running....');
     });
 };
-exports.helloWorld = helloWorld;
+exports.helloPubSub = helloPubSub;
 //# sourceMappingURL=index.js.map
