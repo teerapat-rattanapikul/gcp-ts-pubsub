@@ -3,7 +3,7 @@ import { ExpressAdapter } from '@nestjs/platform-express'
 import express from 'express'
 
 
-export const helloWorld = (event: any, context: any) => {
+export const helloPubSub = (event: any, context: any) => {
     const message = event.data || null
 
     const server = express()
