@@ -1,11 +1,15 @@
 import { NestFactory } from '@nestjs/core'
-import { ExpressAdapter } from '@nestjs/platform-express'
-import express from 'express'
 
-export const helloWorld = (event: any, context: any) => {
+const createNestServer = async () => {
+  const moduless = class BatchModule {}
+  const app = await NestFactory.create(moduless)
+  return app.init()
+}
 
-  const server = express()
+export const helloWorld = async (event: any, context: any) => {
 
+  await createNestServer()
+  
   const message = event.data
     ? event.data : 'Hello, World';
   console.log(message);
