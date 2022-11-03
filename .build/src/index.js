@@ -1,19 +1,8 @@
-var nestt = require('@nestjs/core');
-
-exports.helloWorld = (event, context) => {
-  const message = event.data || null
-
-  const createNestServer = async () => {
-    const moduless = class BatchModule {}
-    const app = await nestt.NestFactory.create(moduless)
-    return app.init()
-  }
-
-  createNestServer()
-  .then((v) => {
-    console.log(message)
-    console.log('running....')
-  })
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.helloWorld = void 0;
+const helloWorld = (event, context) => {
+    console.log('running....');
 };
-
+exports.helloWorld = helloWorld;
 //# sourceMappingURL=index.js.map
