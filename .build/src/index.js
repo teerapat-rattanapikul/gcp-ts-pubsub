@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.helloWorld = void 0;
 var nestt = require('@nestjs/core');
 exports.helloPubSub = (event, context) => {
   const message = event.data || null
