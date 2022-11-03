@@ -1,5 +1,6 @@
 var nestt = require('@nestjs/core');
-exports.helloPubSub = (event, context) => {
+
+exports.helloWorld = (event, context) => {
   const message = event.data || null
 
   const createNestServer = async () => {
