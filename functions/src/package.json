@@ -8,7 +8,7 @@
         "region": "asia-southeast1",
         "gcp_project": "gcp-function-361107",
         "runtime": "nodejs14",
-        "topic":"topics/trigger-pubsub"
+        "topic": "topics/trigger-pubsub"
     },
     "scripts": {
         "clean": "rimraf \"functions/*\"",
@@ -45,5 +45,8 @@
         "rimraf": "3.0.2",
         "tslint": "6.1.3",
         "typescript": "4.8.4"
+    },
+    "dependencies": {
+        "@nestjs/core": "^9.2.0"
     }
 }
